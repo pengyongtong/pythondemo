@@ -1,0 +1,1045 @@
+
+
+
+
+
+
+
+
+
+
+
+
+	
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+﻿
+
+
+
+
+
+
+
+
+
+
+
+	
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type='text/javascript' src='/view/resource/plug-in/jquery/jquery-mini.js'></script>
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no"/>
+		<title>四川采购</title>
+		<meta name="description" content=""/>
+		<meta name="keywords" content=""/>
+		<link rel="shortcut icon" href=""/>
+		<link href="/new/css/base.css" rel="stylesheet" type="text/css" />
+		<link href="/new/css/page.css" rel="stylesheet" type="text/css" />
+		
+			<script type="text/javascript" src="/new/script/commen.js"></script>
+		<script type="text/javascript" src="/new/script/jquery-1.11.3.min.js"></script>
+		  <script type="text/javascript" src="/new/script/jquery-1.11.3.min.js"></script>
+     	<script type="text/javascript" src="/new/script/jquery.flexslider-min.js"></script>
+
+		     	
+	<link rel="stylesheet" href="/new/jQuery/zTreeStyle.css" type="text/css" />
+	
+
+<script type="text/javascript" src='/cms/resbase/script/topic.js'></script>
+
+<!--JS -->
+<script type="text/javascript" src="/cms/resbase/anhuiwebsite/res/js/jquery.js" ></script>
+<script type="text/javascript" src="/cms/resbase/anhuiwebsite/res/js/epsTabs/ui.core.js" ></script>
+<script type="text/javascript" src="/cms/resbase/anhuiwebsite/res/js/epsTabs/ui.tabs.js" ></script>
+<script type="text/javascript" language="javascript" src="/cms/resbase/anhuiwebsite/res/js/imgPlay/imgPlay.js"></script>
+
+<script type="text/javascript" language="javascript" src="/cms/resbase/anhuiwebsite/details.js"></script>
+
+<script type="text/javascript" language="javascript" src="/view/resource/scripts/util/loadPage.js" ></script>
+
+<script type="text/javascript" src="/cms/resbase/default/script/addFlashJs.js"></script>
+<script type="text/javascript" src="/view/resource/plug-in/jquery/select/jQuery.FillOptions.js"></script>
+<script type="text/javascript" src="/view/resource/plug-in/jquery/select/jQuery.CascadingSelect.js"></script>
+<script type="text/javascript" src='/view/resource/scripts/jquery/epsDatepicker/epsDatepicker.js'></script>
+<script type="text/javascript" src="/view/resource/scripts/util/obj2str.js"></script>
+<script type="text/javascript" src="/cms/resbase/default/script/AC_RunActiveContent.js"></script>
+<script type="text/javascript" src="/view/resource/plug-in/jquery/select/jQuery.FillOptions.js"></script>
+
+		
+</head>
+
+<body>
+
+
+<!--浏览器检测 开始-->
+<!--[if IE 6]>
+<div class="userTips">
+	<p>尊敬的用户，您好！您使用的浏览器版本过低，请升级到较高版本，以获得更好的安全性及操作、视觉体验。<a href="http://www.microsoft.com/china/windows/internet-explorer/worldwide-sites.aspx" title="点击下载IE8浏览器安装文件">下载IE8浏览器</a></p>
+</div>
+<![endif]-->
+<noscript>
+  <div class="userTips">
+    <p>尊敬的用户，您好！您使用的浏览器不支持或禁用JavaScript脚本。请使用支持JavaScript脚本的浏览器或启用浏览器JavaScript脚本功能。</p>
+    
+  </div>
+</noscript>
+<!--浏览器检测 结束-->
+  
+<script>
+	var gpcsoftDate = new Date("2021","10","3","15","26","25");//设定 当前 服 器时间 
+</script>
+<input type="hidden" id="ssousername" value="null" />
+<input type="hidden" id="initPath" value="" />
+<input type="hidden" id="returnUrl" value="" />
+<input type="hidden" id="currentTab" value="0"/>
+<input type="hidden" id="roleType" value="null" />
+
+<div class="warpper head-re">
+		  <div class="top-banner"><img src="/new/images/top-banner.jpg" alt=""/></div>
+		  <!--导航-->
+		  <div class="respMenu"><img src="/new/images/phone-menu.png"></div>
+		  <div class="header">
+		  	<ul class="cf" id="menu_ul">
+	           <li class="curr" id="index_m"><a href="/view/srplatform/portal/index.html">首页</a></li>
+	          <li id="bgt_m"><a href="/CmsNewsController.do?method=recommendBulletinList&moreType=provincebuyBulletinMore&channelCode=bgt_zzs&rp=25&page=1">曝光台</a></li>
+	          <li id="gzdt_m"><a href="/CmsNewsController.do?method=recommendBulletinList&moreType=provincebuyBulletinMore&channelCode=gzdt&rp=25&page=1">工作动态</a></li>
+	          <li id="scggg_m"><a href="/CmsNewsController.do?method=recommendBulletinList&moreType=provincebuyBulletinMore&channelCode=sjcg1&rp=25&page=1">省采购公告</a></li>
+	          <li id="shicggg_m"><a href="/CmsNewsController.do?method=recommendBulletinList&moreType=provincebuyBulletinMore&channelCode=sjcg2&rp=25&page=1">市县级采购公告</a></li>
+	          <li id="zcfg_m"><a href="/CmsNewsController.do?method=recommendBulletinList&moreType=provincebuyBulletinMore&channelCode=zcfg&rp=25&page=1">政策法规</a></li>
+	          <li id="cgzs_m"><a href="/CmsNewsController.do?method=recommendBulletinList&moreType=provincebuyBulletinMore&channelCode=cgzs&rp=25&page=1">下载专区</a></li>
+	          <li id="bszn_m"><a href="/CmsNewsController.do?method=recommendBulletinList&moreType=provincebuyBulletinMore&channelCode=bszn&rp=25&page=1">办事指南</a></li>
+	          <li class="moreNav" id="xgmk_m">
+	            <a href="javascript:;">相关模块</a>
+	            <div class="navHide">
+	              <dl>
+	                <dd><a href="http://182.131.17.14:9005/" target="_target">专家库</a></dd>
+	                <dd><a href="http://202.61.88.152:9004/gpms/GoodsShowController.do?method=toShowGoodsIndexView" target="_target">商品库</a></dd>
+	                <dd><a href="http://202.61.88.152:9004/gpms/SupplierShowController.do?method=toSupplierList&rp=20&page=1&districtLevel=1" target="_target">供应商库</a></dd>
+	                <dd><a href="/AgencyShowController.do?method=toAgencyInfoList&rp=20&page=1&districtLevel=1" target="_target">代理机构</a></dd>
+	                <dd><a href="https://sczcd.netscf.com/static/login/login.html" target="_target">政采贷</a></dd>
+				  </dl>
+	            </div>
+	          </li>
+	        </ul>
+        </div>
+      </div>
+
+
+
+<script type="text/javascript" src="/view/resource/plug-in/jquery/select/jQuery.FillOptions.js"></script>
+<script type="text/javascript" src="/view/resource/plug-in/jquery/select/jQuery.CascadingSelect.js"></script>
+<script type="text/javascript" src="/view/resource/plug-in/jquery/select/test.js"></script>
+<script type="text/javascript" src="/new/script/plugins/Calendar.js"></script>
+
+
+
+
+    <script type="text/javascript" src="/new/jQuery/jquery.ztree.core.js"></script>
+	<script type="text/javascript">
+	//日期                                                                                                      
+// 	lay('.data-item').each(function() {
+// 		laydate.render({
+// 			elem : this,
+// 			trigger : 'click',
+// 			format : 'yyyy-MM-dd'
+// 		});
+// 	});
+	
+	
+	
+	
+	$(function(){
+				  
+    				 var option = {parameter:"objId",isfirstselect:"yes"};  
+	       			
+	       				var citydatas=$('#city').FillOptions($('#initPath').val()+'/DistrictController.do?method=getSubDistricts&objId=510000',option,function(datas){
+	    					$('select[name=city.objId]').val($("#cityReturn").val());
+	    					$('select[name=province.objId]').val("510000");
+	    				});
+	    				 $('#city').CascadingSelect($('#town'),$('#initPath').val()+'/DistrictController.do?method=getSubDistricts',option,function(datas){});
+	    				 var towndatas=$('select[name=town.objId]').FillOptions(
+	         					$('#initPath').val()+'/DistrictController.do?method=getSubDistricts&objId='+$("#cityReturn").val(),
+	         					{parameter:"objId"},
+	         					function(){ $("select[name=town.objId]").val($("#townReturn").val());}
+	         			);
+	         			})
+	
+		$(function(){
+		
+		
+						$("#menu_ul li").each(function(){
+    					$(this).removeClass('curr');  
+						});
+					if(true){
+					$("#scggg_m").addClass('curr');                            // 添加当前元素的样式
+					}else if(false){
+					$("#shicggg_m").addClass('curr');                            // 添加当前元素的样式
+					}else if(false){
+					$("#bgt_m").addClass('curr');                            // 添加当前元素的样式
+					}else if(false){
+					$("#gzdt_m").addClass('curr');                            // 添加当前元素的样式
+					}else if(false){
+					$("#zcfg_m").addClass('curr');                            // 添加当前元素的样式
+					}else if(false){
+					$("#cgzs_m").addClass('curr');                            // 添加当前元素的样式
+					}else if(false){
+					$("#bszn_m").addClass('curr');                            // 添加当前元素的样式
+					}
+       		 
+	
+	}); 
+		
+		
+		
+		var show_list={};
+
+//构造搜索条件
+show_list.makeSearchData=function(){
+	show_list.search = "";
+	//分页信息
+	if($('#rp') && $('#rp').val()==null){
+		show_list.search += "&rp=25";
+		show_list.search += "&page=1";
+	}else{
+		show_list.search += "&rp="+$('#rp').val();
+		show_list.search += "&page="+$('#page').val();
+	}
+
+	show_list.search += "&moreType=provincebuyBulletinMore&channelCode=sjcg1";
+
+	
+	window.location.href="/CmsNewsController.do?method=recommendBulletinList"+show_list.search;
+	
+}
+
+
+
+function native2ascii(strNative) {
+	//alert(strNative+'======');
+    var output = "";
+	if(strNative && ""!=strNative ){
+		for (var i=0; i<strNative.length; i++) {		
+			var c = strNative.charAt(i);	
+			var cc = strNative.charCodeAt(i);
+			if (cc > 0xff){	
+				output += "\\u" + toHex(cc >> 8) + toHex(cc & 0xff);
+			}else{				
+				output += c;
+			}		
+		}
+	}
+    return output;
+}
+  	 
+
+$(function(){
+				
+    var chnlCodes = native2ascii($("#chnlCodes").val());
+    
+    $("#channelId").val(chnlCodes);
+    ///var chnlNames = $("#chnlNames").val();
+	//var channelNames =native2ascii($("#channelName").val());
+			//搜索按钮
+	$("#searchNewsBtn").click(function(){
+	    if(document.getElementById('title').value=='请输入关键字'){
+
+		        alert('请输入要搜索的内容!!!!!');
+
+		return;
+
+	}
+
+	    
+		var title = native2ascii($("#title").val());
+			var channelCodes = native2ascii($("#channelId").val());
+			var channelNames =native2ascii($("#channelName").val());
+		var startTime =  native2ascii($("#startTime").val());
+		var endTime =  native2ascii($("#endTime").val());
+		
+		if(endTime !== null && endTime !== undefined && endTime !== ''){
+			if(startTime !=null && startTime !== undefined && startTime !== ''){
+			var time1 = startTime.substring(4,0);
+			var time2 = endTime.substring(4,0);
+			
+			if(time1 != time2){
+			alert("不能跨年查询公告，请重新选择时间范围!");
+			return ;
+			}
+			}
+			}
+		
+		
+		        var province = $("#province").val();
+	    		var city = $("#city").val();
+	    		var town = $("#town").val();
+	    		var provinceText = native2ascii($("#province").find("option:selected").text());
+	    		var cityText = native2ascii($("#city").find("option:selected").text());
+	    		var townText = native2ascii($("#town").find("option:selected").text());
+	    		var townText = native2ascii($("#town").find("option:selected").text());
+	    		
+	    		var distin_like="";
+	    		var disSubCode="";
+	    		if(province!=null && province!="" && city!=null && city!="" && town!=null && town!=""){
+	    			 disSubCode =town ;
+	    			 distin_like = disSubCode;
+			}else if((province!=null && province!="") && (city!=null && city!="") && (town==null||town=="")){
+				     disSubCode=city;
+				     distin_like = disSubCode;
+			}else if(province!=null && province!="" && (city==null||city==""||town==null||town=="")){
+				     disSubCode=province;
+				     distin_like = disSubCode;
+			}else{
+				distin_like= "";
+			}
+		var years="2018";
+		window.open("/CmsNewsController.do?method=search&chnlCodes="+channelCodes+"&chnlNames="+channelNames+"&years="+years+"&title="+title+"&startTime="+startTime+"&endTime="+endTime+"&distin_like="+distin_like+"&province="+province+"&city="+city+"&town="+town+"&provinceText="+provinceText+"&cityText="+cityText+"&townText="+townText+"&pageSize=10&searchResultForm=search_result_anhui.ftl")
+	});
+	
+	})
+</script>
+
+ 
+	
+		<script type="text/javascript">
+     	 
+		 var setting = {
+			view: {
+				dblClickExpand: false
+			},
+			data: {
+				simpleData: {
+					enable: true
+				}
+			},
+			callback: {
+				beforeClick: beforeClick,
+				onClick: onClick
+			}
+		};
+
+		var zNodes =[
+			{id:"", pId:"0", name:"所有"},
+			{id:"8a817eb738e5e70c0138e625dfeb0bf4", pId:0, name:"工作通知", open:false},
+			{id:"8a817ecb397ab20c01397b58decd29d1", pId:"8a817eb738e5e70c0138e625dfeb0bf4", name:"省级"},
+			{id:"8a817ecb397ab20c01397b59c84329dd", pId:"8a817eb738e5e70c0138e625dfeb0bf4", name:"市县级"},
+			{id:"8a817eb738e5e70c0138e5f54a6b0540", pId:0, name:"工作动态", open:false},
+			{id:"8a817eb738e5e70c0138e5f8dd080a4a", pId:"8a817eb738e5e70c0138e5f54a6b0540", name:"省级"},
+			{id:"8a817eb738e5e70c0138e5fa312e0a5e", pId:"8a817eb738e5e70c0138e5f54a6b0540", name:"市、州级"},
+			{id:"8a817eb738e5e70c0138e6040a4c0aa6", pId:"8a817eb738e5e70c0138e5f54a6b0540", name:"县、区级"},
+			{id:"8a817ecb39485e330139488c7ea00a22", pId:0, name:"曝光台", open:false},
+			{id:"8a817ecb39485e330139488c7ea00a22_4", pId:"8a817ecb39485e330139488c7ea00a22", name:"供应商"},
+			{id:"8a817ecb39485e330139488c7ea00a22_2", pId:"8a817ecb39485e330139488c7ea00a22", name:"代理机构"},
+			{id:"8a817ecb39485e330139488c7ea00a22_3", pId:"8a817ecb39485e330139488c7ea00a22", name:"评审专家"},
+			{id:"8a817ecb39485e330139488c7ea00a22_1", pId:"8a817ecb39485e330139488c7ea00a22", name:"采购人"},
+			{id:"8a817ecb390f11e801390f54f92f0f7f", pId:0, name:"政策法规", open:false},
+			{id:"8a817ecb399e504901399e95a1322aa6", pId:"8a817ecb390f11e801390f54f92f0f7f", name:"国家级"},
+			{id:"8a817ecb399e504901399e9603472aaa", pId:"8a817ecb390f11e801390f54f92f0f7f", name:"省级"},
+			{id:"8a817ecb399e504901399e9734162aae", pId:"8a817ecb390f11e801390f54f92f0f7f", name:"市县级"},
+			{id:"8a817ecb39add7c40139ae0b9zonyxgk", pId:0, name:"意向公开", open:false},
+			{id:"8a817ecb39add7c40139ae0b9b4syxgk", pId:"8a817ecb39add7c40139ae0b9zonyxgk", name:"省级"},
+			{id:"8a817ecb39add7c40139ae0b9shiyxgk", pId:"8a817ecb39add7c40139ae0b9zonyxgk", name:"市县级"},
+			{id:"8a817ecb395699fc01395778b9532421", pId:0, name:"公示", open:false},
+			{id:"8a817ecb395699fc013957a3168a24e2", pId:"8a817ecb395699fc01395778b9532421", name:"单一来源"},
+			{id:"8a817ecb395699fc013957a41f6e24e6", pId:"8a817ecb395699fc01395778b9532421", name:"进口产品"},
+			{id:"8a817ecb397ab20c01397b5fa9b229fd", pId:"8a817ecb395699fc01395778b9532421", name:"投诉处理"},
+			{id:"4028868755c539f90155c53e674a0004", pId:"8a817ecb395699fc01395778b9532421", name:"需求论证"},
+			{id:"4028868755c539f90155c53ef4d60008", pId:"8a817ecb395699fc01395778b9532421", name:"质疑答复"},
+			{id:"4028868755c539f90155c5400f2b000c", pId:"8a817ecb395699fc01395778b9532421", name:"履约验收"},
+			{id:"4028868755c539f90155c54083950010", pId:"8a817ecb395699fc01395778b9532421", name:"评审专家"},
+			{id:"4028868755c539f90155c540fc7d0014", pId:"8a817ecb395699fc01395778b9532421", name:"绩效评价"},
+			{id:"8a817eb738e5e70c0138e62ab6430c0a", pId:0, name:"省级采购", open:false},
+			{id:"8a817ecb39add7c40139ae0af1281006", pId:"8a817eb738e5e70c0138e62ab6430c0a", name:"采购公告",open:false},
+			{id:"8a817ecb39b9902a0139b9a541e90b4f", pId:"8a817ecb39add7c40139ae0af1281006", name:"竞争性谈判采购公告"},
+			{id:"8a817ecb39b9902a0139b9a22bc00b47", pId:"8a817ecb39add7c40139ae0af1281006", name:"邀请招标采购公告"},
+			{id:"8a817ecb39b9902a0139b9a2dfaf0b4b", pId:"8a817ecb39add7c40139ae0af1281006", name:"公开招标采购公告"},
+			{id:"402886875355b06e01539d135c5a3b0e", pId:"8a817ecb39add7c40139ae0af1281006", name:"竞争性磋商采购公告"},
+			{id:"8a817ecb39b9902a0139b9a5d8ea0b53", pId:"8a817ecb39add7c40139ae0af1281006", name:"询价采购公告"},
+			{id:"8a817ecb39b9902a0139b9a72aed0b57", pId:"8a817ecb39add7c40139ae0af1281006", name:"单一来源采购公告"},
+			{id:"8a817ecb39add7c40139ae0b9b43100e", pId:"8a817eb738e5e70c0138e62ab6430c0a", name:"中标公告"},
+			{id:"8a817ecb39add7c40139ae0b9b43166", pId:"8a817eb738e5e70c0138e62ab6430c0a", name:"成交公告"},
+			{id:"8a817ecb39add7c40139ae0c09001012", pId:"8a817eb738e5e70c0138e62ab6430c0a", name:"更正公告"},
+			{id:"99997ecb39b9902a0139b9a72aed0b57", pId:"8a817eb738e5e70c0138e62ab6430c0a", name:"竞价采购公告"},
+			{id:"88887ecb39b9902a0139b9a72aed0b57", pId:"8a817eb738e5e70c0138e62ab6430c0a", name:"竞价成交公告"},
+			{id:"8a817eb738e5e70c0138e65ad1a10e0a", pId:0, name:"市县级采购", open:false},	
+			{id:"8a817ecb39d832560139d85416d70ad5", pId:"8a817eb738e5e70c0138e65ad1a10e0a", name:"资格预审公告"},
+			{id:"8a817eb738e5e70c0138e6655ad50e67", pId:"8a817eb738e5e70c0138e65ad1a10e0a",  name:"采购公告",open:false},
+			{id:"8a817ecb39d832560139d85a2ea70b06", pId:"8a817eb738e5e70c0138e6655ad50e67", name:"询价采购公告"},	
+			{id:"8a817ecb39d832560139d85b10ca0b0a", pId:"8a817eb738e5e70c0138e6655ad50e67", name:"单一来源采购公告"},	
+			{id:"8a817ecb39d832560139d858abff0afe", pId:"8a817eb738e5e70c0138e6655ad50e67", name:"公开招标采购公告"},	
+			{id:"402886875355b06e01539dde85093fb9", pId:"8a817eb738e5e70c0138e6655ad50e67", name:"竞争性磋商采购公告"},	
+			{id:"8a817ecb39d832560139d85973c30b02", pId:"8a817eb738e5e70c0138e6655ad50e67", name:"竞争性谈判采购公告"},	
+			{id:"8a817ecb39d832560139d85806a70afa", pId:"8a817eb738e5e70c0138e6655ad50e67", name:"邀请招标采购公告"},
+			{id:"8a817eb738e5e70c0138e66e141c0ea1", pId:"8a817eb738e5e70c0138e65ad1a10e0a", name:"中标公告"},	
+		    {id:"8a817ecb39add7c40139ae0b9sj3166", pId:"8a817eb738e5e70c0138e65ad1a10e0a", name:"成交公告"},	
+		    {id:"8a817ecb39add7c40139ae0b9sj3167", pId:"8a817eb738e5e70c0138e65ad1a10e0a", name:"废标、流标公告"},	
+	        {id:"8a817eb738e5e70c0138e670a0260eb3", pId:"8a817eb738e5e70c0138e65ad1a10e0a", name:"更正公告"},	
+	        {id:"77777ecb39b9902a0139b9a72aed0b57", pId:"8a817eb738e5e70c0138e65ad1a10e0a", name:"竞价采购公告"},	
+	        {id:"66667ecb39b9902a0139b9a72aed0b57", pId:"8a817eb738e5e70c0138e65ad1a10e0a", name:"竞价成交公告"},	
+	        {id:"8a817ecb39add7c40139ae0b9sqitg2", pId:"8a817eb738e5e70c0138e65ad1a10e0a", name:"其它公告"},
+			{id:"8a817eb738e5e70c0138e60d9fd90afd", pId:0, name:"办事指南"},
+			{id:"8a817eb738e5e70c0138e60d97690afd", pId:0, name:"互动交流"}					
+		 ];
+
+		function beforeClick(treeId, treeNode) {
+			var check = (treeNode && !treeNode.isParent);
+			if (!check) alert("只能选择子栏目查询...");
+			return check;
+		}
+		
+		function onClick(e, treeId, treeNode) {
+			var zTree = $.fn.zTree.getZTreeObj("treeDemo"),
+			nodes = zTree.getSelectedNodes(),
+			v = "";
+			k = "";
+			nodes.sort(function compare(a,b){return a.id-b.id;});
+			for (var i=0, l=nodes.length; i<l; i++) {
+				v += nodes[i].name + ",";
+				k +=nodes[i].id+",";
+			}
+			if (v.length > 0 ) v = v.substring(0, v.length-1);
+			if (k.length > 0 ) k = k.substring(0, k.length-1);
+			//alert(k);
+			var cityObjTxt = $("#channelName");
+			var cityObjId = $("#channelId");
+			cityObjId.attr("value", k);
+			cityObjTxt.attr("value", v);
+		}
+
+		function showMenu() {
+			var cityObjTxt = $("#channelName");
+			var cityOffset = $("#channelName").offset();
+			$("#menuContent").css({left:cityOffset.left + "px", top:cityOffset.top + cityObjTxt.outerHeight() + "px"}).slideDown("fast");
+
+			$("body").bind("mousedown", onBodyDown);
+		}
+		function hideMenu() {
+			$("#menuContent").fadeOut("fast");
+			$("body").unbind("mousedown", onBodyDown);
+		}
+		function onBodyDown(event) {
+			if (!(event.target.id == "channelName" || event.target.id == "menuContent" || $(event.target).parents("#menuContent").length>0)) {
+				hideMenu();
+			}
+		}
+
+		$(document).ready(function(){
+			$.fn.zTree.init($("#treeDemo"), setting, zNodes);
+		});
+
+     </script>
+	
+	
+
+
+</head>
+<body>
+
+<div class="warpper">
+<input id="chnlCodes" name="chnlCodes" type="hidden"  value="8a817eb738e5e70c0138e62ab6430c0a"/>
+	<div class="siteBox">
+		<img src="new/images/adress.png" alt='' /><span>您现在的位置 ：</span> <a
+			href="/view/srplatform/portal/index.html"
+			id="/view/srplatform/portal/index.html" title="首页" target="_self">首页</a>
+		|&nbsp; <a href="#" id="" title="省采购公告">省采购公告列表</a>
+
+	</div>
+	<!--list-->
+	<div class="list-info">
+			<div class="ck-search round-row">
+				<div class="two-cell col col-85">
+					<div class="col col-99">
+						<div class="form-item">
+			                <label class="ar">标题 </label>
+			                <div class="box-r"><input type="text" placeholder="" class="form-control" id="title"  value=""></div>
+			            </div>
+					</div>
+					<div class="col col-33">
+						<div class="form-item">
+			                <label>开始时间 </label>
+			                <div class="box-r">
+			                 <input name="startTime" id="startTime" type="text"  onClick="new Calendar().show(this);" readonly="readonly" class="form-control data-item" placeholder="开始日期"/>
+                
+			                	
+	                			<span class="data-ic"><img src="/new/images/data-ic.jpg" alt="开始日期"/></span>
+			                </div>
+			            </div>
+					</div>
+					<div class="col col-33">
+						<div class="form-item">
+			                <label>结束时间 </label>
+			                <div class="box-r">
+			                	 <input name="endTime" id="endTime" type="text"  onClick="new Calendar().show(this);" readonly="readonly" class="form-control data-item" placeholder="结束日期"/>
+                
+	                			<span class="data-ic"><img src="/new/images/data-ic.jpg" alt="结束日期"/></span>
+			                </div>
+			            </div>
+					</div>
+					
+					<div class="col col-33">
+            <div class="form-item">
+                    <label>发布类型 </label>
+                    <div class="box-r">
+                 <input id="channelName" name="channelName" type="text" readonly  placeholder="请选择公告类型" class="form-control" onclick="showMenu(); return false;"  value="省采购公告"/>
+		    <input id="channelId" name="channelId" type="hidden"  value="8a817eb738e5e70c0138e62ab6430c0a"/>
+		   
+		</div>
+              </div>
+			<div id="menuContent" class="menuContent" style="display:none; position: absolute;z-index:1">
+				<ul id="treeDemo" class="ztree" style="margin-top:0; "></ul>
+			</div>
+               
+          </div>
+					<div class="col col-100">
+						<div class="form-item citySel">
+						   <label>行政区域</label>
+						   <div class="box-r">
+	               <div class="select-option">
+                    <select  name="province.objId" id="province"  class="valid">
+                      <option value="510000">四川省</option>
+                    
+                    </select>
+                  </div>
+                 </div>
+                 <div class="box-r">
+                 <div class="select-option">
+                    <select  name="city.objId"  id="city" class="valid">
+                      <option>请选择区</option>
+                    </select>
+                  </div>
+                 </div>
+                 <div class="box-r">
+                 <div class="select-option">
+                    <select  name="town.objId"  id="town" class="valid">
+                      <option>请选择区</option>
+                      
+                    </select>
+                  </div>
+                 </div>
+			      </div>
+					</div>
+					
+				</div>
+  	
+			<div class="col col-10 mt-45 ac">
+				<button class="btn-orange searchBtn" id="searchNewsBtn">搜索</button>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<!--list-->
+		<div class="info">
+			<ul>
+				
+					<li>
+						<div class="time curr">
+							<span>30</span>
+							2021-09
+						</div> <a href="http://202.61.88.152:9080/TPFrame/AttachStorage/staticpages/jzxcscggg/2021-09-30/0f201115-98d4-4254-815b-8829ca69644c.html" id="0f201115-98d4-4254-815b-8829ca69644c"
+						title="成都信息工程大学2021年电子资源采购项目（第二批）竞争性磋商采购公告" target="_blank">
+							<div class="title">成都信息工程大学2021年电子资源采购项目（第二批）竞争性磋商采购公告</div>
+							<p>成都信息工程大学2021年电子资源采购项目（第二批）竞争性磋商采购公告</p>
+					</a>
+						<div class="clear"></div>
+
+					</li>
+
+				
+					<li>
+						<div class="time curr">
+							<span>30</span>
+							2021-09
+						</div> <a href="http://202.61.88.152:9004/gpms/BulletinShowController.do?method=getBulletinInfo&projectId=402800987c343bc5017c35d53d4b2b12&bulletinType=13&tenderMethod=00" id="402800987c343bc5017c35d53d4b2b12"
+						title="四川省生态环境科学研究院SCZC328936_20210021笔记本商场直购项目(第9次)成交公告" target="_blank">
+							<div class="title">四川省生态环境科学研究院SCZC328936_20210021笔记本商场直购项目(第9次)成交公告</div>
+							<p>四川省生态环境科学研究院SCZC328936_20210021笔记本商场直购项目(第9次)成交公告</p>
+					</a>
+						<div class="clear"></div>
+
+					</li>
+
+				
+					<li>
+						<div class="time curr">
+							<span>30</span>
+							2021-09
+						</div> <a href="http://202.61.88.152:9080/TPFrame/AttachStorage/staticpages/jzxcscggg/2021-09-30/d2451e35-e242-49cc-99ff-903ffb0ccfe1.html" id="d2451e35-e242-49cc-99ff-903ffb0ccfe1"
+						title="四川省第二退役军人医院（四川省退役军人精神卫生中心）办公家具竞争性磋商政府采购项目(川政采磋商〔2021〕183号)竞争性磋商采购公告" target="_blank">
+							<div class="title">四川省第二退役军人医院（四川省退役军人精神卫生中心）办公家具竞争性磋商政府采购项目(川政采磋商〔2021〕183号)竞争性磋商采购公告</div>
+							<p>四川省第二退役军人医院（四川省退役军人精神卫生中心）办公家具竞争性磋商政府采购项目(川政采磋商〔2021〕183号)竞争性磋商采购公告</p>
+					</a>
+						<div class="clear"></div>
+
+					</li>
+
+				
+					<li>
+						<div class="time curr">
+							<span>30</span>
+							2021-09
+						</div> <a href="http://202.61.88.152:9080/TPFrame/AttachStorage/staticpages/gkzbcggg/2021-09-30/bdfb130d-5334-4572-b28c-0f9349ded15a.html" id="bdfb130d-5334-4572-b28c-0f9349ded15a"
+						title="四川省住房和城乡建设厅劳务派遣服务采购项目公开招标采购公告" target="_blank">
+							<div class="title">四川省住房和城乡建设厅劳务派遣服务采购项目公开招标采购公告</div>
+							<p>四川省住房和城乡建设厅劳务派遣服务采购项目公开招标采购公告</p>
+					</a>
+						<div class="clear"></div>
+
+					</li>
+
+				
+					<li>
+						<div class="time curr">
+							<span>30</span>
+							2021-09
+						</div> <a href="http://202.61.88.152:9080/TPFrame/AttachStorage/staticpages/gkzbcggg/2021-09-30/77e36597-4a2e-42f8-9a41-9df5bab44c93.html" id="77e36597-4a2e-42f8-9a41-9df5bab44c93"
+						title="四川省人民医院互联网医院AI能力升级采购项目公开招标采购公告" target="_blank">
+							<div class="title">四川省人民医院互联网医院AI能力升级采购项目公开招标采购公告</div>
+							<p>四川省人民医院互联网医院AI能力升级采购项目公开招标采购公告</p>
+					</a>
+						<div class="clear"></div>
+
+					</li>
+
+				
+					<li>
+						<div class="time curr">
+							<span>30</span>
+							2021-09
+						</div> <a href="http://202.61.88.152:9004/gpms/BulletinShowController.do?method=getBulletinInfo&projectId=402800987c343bc5017c35d23fea2afb&bulletinType=13&tenderMethod=00" id="402800987c343bc5017c35d23fea2afb"
+						title="四川省生态环境科学研究院SCZC328936_20210022台式计算机商场直购项目(第4次)成交公告" target="_blank">
+							<div class="title">四川省生态环境科学研究院SCZC328936_20210022台式计算机商场直购项目(第4次)成交公告</div>
+							<p>四川省生态环境科学研究院SCZC328936_20210022台式计算机商场直购项目(第4次)成交公告</p>
+					</a>
+						<div class="clear"></div>
+
+					</li>
+
+				
+					<li>
+						<div class="time curr">
+							<span>30</span>
+							2021-09
+						</div> <a href="http://202.61.88.152:9080/TPFrame/AttachStorage/staticpages/gkzbcggg/2021-09-30/bc646517-75ef-4e68-84e1-efd5b6b6c16f.html" id="bc646517-75ef-4e68-84e1-efd5b6b6c16f"
+						title="四川省人民医院放射科影像专用显示器采购项目公开招标采购公告" target="_blank">
+							<div class="title">四川省人民医院放射科影像专用显示器采购项目公开招标采购公告</div>
+							<p>四川省人民医院放射科影像专用显示器采购项目公开招标采购公告</p>
+					</a>
+						<div class="clear"></div>
+
+					</li>
+
+				
+					<li>
+						<div class="time curr">
+							<span>30</span>
+							2021-09
+						</div> <a href="http://202.61.88.152:9080/TPFrame/AttachStorage/staticpages/jggg/2021-09-30/c6f46855-ccfd-4cb2-a857-2f34850ffd0f.html" id="c6f46855-ccfd-4cb2-a857-2f34850ffd0f"
+						title="四川省食品检验研究院仪器设备采购项目竞争性谈判结果公告" target="_blank">
+							<div class="title">四川省食品检验研究院仪器设备采购项目竞争性谈判结果公告</div>
+							<p>四川省食品检验研究院仪器设备采购项目竞争性谈判结果公告</p>
+					</a>
+						<div class="clear"></div>
+
+					</li>
+
+				
+					<li>
+						<div class="time curr">
+							<span>30</span>
+							2021-09
+						</div> <a href="http://202.61.88.152:9080/TPFrame/AttachStorage/staticpages/gkzbcggg/2021-09-30/5edcd801-6edb-495e-be3e-3404497a25a2.html" id="5edcd801-6edb-495e-be3e-3404497a25a2"
+						title="西南医科大学附属医院中职学校智能服务平台采购项目公开招标采购公告" target="_blank">
+							<div class="title">西南医科大学附属医院中职学校智能服务平台采购项目公开招标采购公告</div>
+							<p>西南医科大学附属医院中职学校智能服务平台采购项目公开招标采购公告</p>
+					</a>
+						<div class="clear"></div>
+
+					</li>
+
+				
+					<li>
+						<div class="time curr">
+							<span>30</span>
+							2021-09
+						</div> <a href="http://202.61.88.152:9004/gpms/BulletinShowController.do?method=getBulletinInfo&projectId=402800987c343bc5017c35cf8d3d2ae0&bulletinType=13&tenderMethod=00" id="402800987c343bc5017c35cf8d3d2ae0"
+						title="四川省生态环境科学研究院SCZC328936_20210022台式计算机商场直购项目(第5次)成交公告" target="_blank">
+							<div class="title">四川省生态环境科学研究院SCZC328936_20210022台式计算机商场直购项目(第5次)成交公告</div>
+							<p>四川省生态环境科学研究院SCZC328936_20210022台式计算机商场直购项目(第5次)成交公告</p>
+					</a>
+						<div class="clear"></div>
+
+					</li>
+
+				
+					<li>
+						<div class="time curr">
+							<span>30</span>
+							2021-09
+						</div> <a href="http://202.61.88.152:9080/TPFrame/AttachStorage/staticpages/jzxcscggg/2021-09-30/692a9594-7fd2-4738-a4ce-b35a77f2e14b.html" id="692a9594-7fd2-4738-a4ce-b35a77f2e14b"
+						title="四川省公安厅刑侦局警犬基地犬饲养员劳务服务项目竞争性磋商采购公告" target="_blank">
+							<div class="title">四川省公安厅刑侦局警犬基地犬饲养员劳务服务项目竞争性磋商采购公告</div>
+							<p>四川省公安厅刑侦局警犬基地犬饲养员劳务服务项目竞争性磋商采购公告</p>
+					</a>
+						<div class="clear"></div>
+
+					</li>
+
+				
+					<li>
+						<div class="time curr">
+							<span>30</span>
+							2021-09
+						</div> <a href="http://202.61.88.152:9080/TPFrame/AttachStorage/staticpages/jzxcscggg/2021-09-30/0f2be064-a7d7-47e3-ab1d-9c447ebc67b5.html" id="0f2be064-a7d7-47e3-ab1d-9c447ebc67b5"
+						title="四川工程职业技术学院优质课程建设项目竞争性磋商采购公告" target="_blank">
+							<div class="title">四川工程职业技术学院优质课程建设项目竞争性磋商采购公告</div>
+							<p>四川工程职业技术学院优质课程建设项目竞争性磋商采购公告</p>
+					</a>
+						<div class="clear"></div>
+
+					</li>
+
+				
+					<li>
+						<div class="time curr">
+							<span>30</span>
+							2021-09
+						</div> <a href="http://202.61.88.152:9080/TPFrame/AttachStorage/staticpages/gkzbcggg/2021-09-30/28e41bb9-1fcd-4603-bd06-e5500fcd2c72.html" id="28e41bb9-1fcd-4603-bd06-e5500fcd2c72"
+						title="四川轻化工大学台式计算机公开招标采购公告" target="_blank">
+							<div class="title">四川轻化工大学台式计算机公开招标采购公告</div>
+							<p>四川轻化工大学台式计算机公开招标采购公告</p>
+					</a>
+						<div class="clear"></div>
+
+					</li>
+
+				
+					<li>
+						<div class="time curr">
+							<span>30</span>
+							2021-09
+						</div> <a href="http://202.61.88.152:9080/TPFrame/AttachStorage/staticpages/gkzbcggg/2021-09-30/ce8cd77b-5067-4eac-aa02-68ecd3b743bb.html" id="ce8cd77b-5067-4eac-aa02-68ecd3b743bb"
+						title="西华大学化学实验中心、材料科学与工程专业工程认证、法学等一流学科建设专用设备采购项目第二次公开招标采购公告" target="_blank">
+							<div class="title">西华大学化学实验中心、材料科学与工程专业工程认证、法学等一流学科建设专用设备采购项目第二次公开招标采购公告</div>
+							<p>西华大学化学实验中心、材料科学与工程专业工程认证、法学等一流学科建设专用设备采购项目第二次公开招标采购公告</p>
+					</a>
+						<div class="clear"></div>
+
+					</li>
+
+				
+					<li>
+						<div class="time curr">
+							<span>30</span>
+							2021-09
+						</div> <a href="http://202.61.88.152:9004/gpms/BulletinShowController.do?method=getBulletinInfo&projectId=402800987c343bc5017c35cceee42ac8&bulletinType=13&tenderMethod=00" id="402800987c343bc5017c35cceee42ac8"
+						title="四川省生态环境科学研究院SCZC328936_20210022台式计算机商场直购项目(第6次)成交公告" target="_blank">
+							<div class="title">四川省生态环境科学研究院SCZC328936_20210022台式计算机商场直购项目(第6次)成交公告</div>
+							<p>四川省生态环境科学研究院SCZC328936_20210022台式计算机商场直购项目(第6次)成交公告</p>
+					</a>
+						<div class="clear"></div>
+
+					</li>
+
+				
+					<li>
+						<div class="time curr">
+							<span>30</span>
+							2021-09
+						</div> <a href="http://202.61.88.152:9080/TPFrame/AttachStorage/staticpages/gkzbcggg/2021-09-30/0d501879-9ff6-4e27-a615-bafb4748525d.html" id="0d501879-9ff6-4e27-a615-bafb4748525d"
+						title="四川省妇幼保健院天府院区政府采购第三批医疗设备采购项目（第二次）公开招标采购公告" target="_blank">
+							<div class="title">四川省妇幼保健院天府院区政府采购第三批医疗设备采购项目（第二次）公开招标采购公告</div>
+							<p>四川省妇幼保健院天府院区政府采购第三批医疗设备采购项目（第二次）公开招标采购公告</p>
+					</a>
+						<div class="clear"></div>
+
+					</li>
+
+				
+					<li>
+						<div class="time curr">
+							<span>30</span>
+							2021-09
+						</div> <a href="http://202.61.88.152:9080/TPFrame/AttachStorage/staticpages/gkzbcggg/2021-09-30/cec76365-aca6-4440-a6d3-b510c371061b.html" id="cec76365-aca6-4440-a6d3-b510c371061b"
+						title="四川农业大学三校区公共区域无线网改造项目公开招标采购公告" target="_blank">
+							<div class="title">四川农业大学三校区公共区域无线网改造项目公开招标采购公告</div>
+							<p>四川农业大学三校区公共区域无线网改造项目公开招标采购公告</p>
+					</a>
+						<div class="clear"></div>
+
+					</li>
+
+				
+					<li>
+						<div class="time curr">
+							<span>30</span>
+							2021-09
+						</div> <a href="http://202.61.88.152:9080/TPFrame/AttachStorage/staticpages/gkzbcggg/2021-09-30/76548fd1-0e49-44e2-a3d0-dec96a5dc2a0.html" id="76548fd1-0e49-44e2-a3d0-dec96a5dc2a0"
+						title="四川省第二退役军人医院（四川省退役军人精神卫生中心）护理单元基础医疗设备（第二次）公开招标采购公告" target="_blank">
+							<div class="title">四川省第二退役军人医院（四川省退役军人精神卫生中心）护理单元基础医疗设备（第二次）公开招标采购公告</div>
+							<p>四川省第二退役军人医院（四川省退役军人精神卫生中心）护理单元基础医疗设备（第二次）公开招标采购公告</p>
+					</a>
+						<div class="clear"></div>
+
+					</li>
+
+				
+					<li>
+						<div class="time curr">
+							<span>30</span>
+							2021-09
+						</div> <a href="http://202.61.88.152:9004/gpms/BulletinShowController.do?method=getBulletinInfo&projectId=402800987c343bc5017c35ca919b2ab0&bulletinType=13&tenderMethod=00" id="402800987c343bc5017c35ca919b2ab0"
+						title="四川省农科院园艺研究所SCZC612914_20210002笔记本商场直购项目(第2次)成交公告" target="_blank">
+							<div class="title">四川省农科院园艺研究所SCZC612914_20210002笔记本商场直购项目(第2次)成交公告</div>
+							<p>四川省农科院园艺研究所SCZC612914_20210002笔记本商场直购项目(第2次)成交公告</p>
+					</a>
+						<div class="clear"></div>
+
+					</li>
+
+				
+					<li>
+						<div class="time curr">
+							<span>30</span>
+							2021-09
+						</div> <a href="http://202.61.88.152:9004/gpms/BulletinShowController.do?method=getBulletinInfo&projectId=402800987c343bc5017c35c80f452a9a&bulletinType=12&tenderMethod=00" id="402800987c343bc5017c35c80f452a9a"
+						title="四川省农科院园艺研究所SCZC612914_20210002笔记本商场直购项目(第2次)采购公告" target="_blank">
+							<div class="title">四川省农科院园艺研究所SCZC612914_20210002笔记本商场直购项目(第2次)采购公告</div>
+							<p>四川省农科院园艺研究所SCZC612914_20210002笔记本商场直购项目(第2次)采购公告</p>
+					</a>
+						<div class="clear"></div>
+
+					</li>
+
+				
+					<li>
+						<div class="time curr">
+							<span>30</span>
+							2021-09
+						</div> <a href="http://202.61.88.152:9080/TPFrame/AttachStorage/staticpages/gkzbcggg/2021-09-30/3760baca-cd55-495a-8eb2-0f3d7fa92d75.html" id="3760baca-cd55-495a-8eb2-0f3d7fa92d75"
+						title="四川省监狱管理局2021年度政法干警统一着装公开招标政府采购项目(川政采招〔2021〕145号)公开招标采购公告" target="_blank">
+							<div class="title">四川省监狱管理局2021年度政法干警统一着装公开招标政府采购项目(川政采招〔2021〕145号)公开招标采购公告</div>
+							<p>四川省监狱管理局2021年度政法干警统一着装公开招标政府采购项目(川政采招〔2021〕145号)公开招标采购公告</p>
+					</a>
+						<div class="clear"></div>
+
+					</li>
+
+				
+					<li>
+						<div class="time curr">
+							<span>30</span>
+							2021-09
+						</div> <a href="http://202.61.88.152:9080/TPFrame/AttachStorage/staticpages/gkzbcggg/2021-09-30/5355930e-eb23-419a-85ef-369de4a8f05a.html" id="5355930e-eb23-419a-85ef-369de4a8f05a"
+						title="四川省肿瘤医院神经外科开颅动力系统采购项目公开招标采购公告" target="_blank">
+							<div class="title">四川省肿瘤医院神经外科开颅动力系统采购项目公开招标采购公告</div>
+							<p>四川省肿瘤医院神经外科开颅动力系统采购项目公开招标采购公告</p>
+					</a>
+						<div class="clear"></div>
+
+					</li>
+
+				
+					<li>
+						<div class="time curr">
+							<span>30</span>
+							2021-09
+						</div> <a href="http://202.61.88.152:9080/TPFrame/AttachStorage/staticpages/gkzbcggg/2021-09-30/4e3e0a1d-5f7d-4aa7-abed-4c779dd00b42.html" id="4e3e0a1d-5f7d-4aa7-abed-4c779dd00b42"
+						title="四川省肿瘤医院微型消防站采购项目公开招标采购公告" target="_blank">
+							<div class="title">四川省肿瘤医院微型消防站采购项目公开招标采购公告</div>
+							<p>四川省肿瘤医院微型消防站采购项目公开招标采购公告</p>
+					</a>
+						<div class="clear"></div>
+
+					</li>
+
+				
+					<li>
+						<div class="time curr">
+							<span>30</span>
+							2021-09
+						</div> <a href="http://202.61.88.152:9080/TPFrame/AttachStorage/staticpages/gkzbcggg/2021-09-30/2fc35fa4-bd34-427b-a413-b3159868a84b.html" id="2fc35fa4-bd34-427b-a413-b3159868a84b"
+						title="四川省肿瘤医院手术显微镜设备采购项目公开招标采购公告" target="_blank">
+							<div class="title">四川省肿瘤医院手术显微镜设备采购项目公开招标采购公告</div>
+							<p>四川省肿瘤医院手术显微镜设备采购项目公开招标采购公告</p>
+					</a>
+						<div class="clear"></div>
+
+					</li>
+
+				
+					<li>
+						<div class="time curr">
+							<span>30</span>
+							2021-09
+						</div> <a href="http://202.61.88.152:9080/TPFrame/AttachStorage/staticpages/gkzbcggg/2021-09-30/9fa1c0db-3395-4f4a-b4ab-b162d059212f.html" id="9fa1c0db-3395-4f4a-b4ab-b162d059212f"
+						title="四川省肿瘤医院移动护理项目公开招标采购公告" target="_blank">
+							<div class="title">四川省肿瘤医院移动护理项目公开招标采购公告</div>
+							<p>四川省肿瘤医院移动护理项目公开招标采购公告</p>
+					</a>
+						<div class="clear"></div>
+
+					</li>
+
+				
+
+			</ul>
+			<div class="page-cell">
+				
+
+
+
+
+
+
+
+
+
+
+
+	
+<input type="hidden" id="title" name="title" value=""/>
+<input type="hidden" id="searchKey" name="searchKey" value=""/>
+<input type="hidden" id="page" name="page" value="3"/>
+<input type="hidden" id="rp" name="rp" value="25"/>
+<input type="hidden" id="totalPageNum" name="totalPageNum" value="2160"/>
+<input type="hidden" id="totalRowNum" name="totalRowNum" value="53991"/>
+
+
+	
+			<div class="span">页次：3/2160页</div>
+		
+		
+		
+		
+			<a id="QuotaList_first" href="javascript:;">首页</a>
+			<a id="QuotaList_previous" href="javascript:;">上一页</a>
+		
+		
+		
+			<a id="QuotaList_next" href="javascript:;">下一页</a>
+			<a id="QuotaList_last" href="javascript:;">尾页</a>
+		
+		<div class="span">每页25条     跳转到</div>
+		
+		
+		
+	
+		<div class="span"><input type="text" placeholder="" class="form-control" id="targetPage"></div>
+					<div class="span" ><button class="sureBtn" id="QuotaList_target">确定</button></div>
+	
+	
+
+
+
+<script>
+var pageDirection = {};
+//跳转
+pageDirection.jump = function(page){
+	$("#page").val(page);
+	show_list.makeSearchData('2');
+}
+
+$(document).ready(function(){
+	//第一页点击
+	$("#QuotaList_first").click(function(){
+		pageDirection.jump('1');
+	});
+	
+	//上一页点击
+	$("#QuotaList_previous").click(function(){
+		pageDirection.jump(parseInt($("#page").val())-1);
+	});
+	
+	//下一页点击
+	$("#QuotaList_next").click(function(){
+		pageDirection.jump(parseInt($("#page").val())+1);
+	});
+	
+	//最后页点击
+	$("#QuotaList_last").click(function(){
+		pageDirection.jump($("#totalPageNum").val());
+	});
+
+	//跳转到目标页
+	$("#QuotaList_target").click(function(){
+		var regNum = /^[\d]*$/;
+		var totalPageNum = $("#totalPageNum").val();
+		var targetPage = $("#targetPage").val();
+		if(!regNum.test(targetPage)||Number(targetPage) == 0){
+			alert("请输入正整数");
+			return false;
+		}else if(Number(targetPage) > Number(totalPageNum)){
+			alert("最大跳转页为"+totalPageNum);
+			return false;
+		}
+		pageDirection.jump($("#targetPage").val());
+	});
+	
+});
+</script>
+			</div>
+		</div>
+	</div>
+</div>
+<!--底部内容 开始-->
+
+
+
+
+<div class="warpper">
+	﻿<!--底部内容 开始-->
+
+<div class="footer">
+       <div class="tab-cell">
+         <div class="fo-img"><script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/23/000/0000/60425105/CA230000000604251050005.js' type='text/javascript'%3E%3C/script%3E"));</script></div>
+         <div class="fo-info">
+           <div class="p-t"><span class="re-f">政府采购信息网站 </span>copyright  2018  www.ccgp-sichuan.gov.cn</div>
+           <div class="p-t"><span>版权所有：四川省财政厅</span><span>技术支持：国泰新点软件股份有限公司</span></div>
+           <div class="p-t"><span>网站标识码</span><a href="https://beian.miit.gov.cn">蜀ICP备11007902号-5</a><span> </span></div>
+         </div>
+         <div class="fo-errow"><script id="_jiucuo_" sitecode='5100000069' src='http://pucha.kaipuyun.cn/exposure/jiucuo.js'></script></div>
+       </div>
+     </div>
+</div>
+
+<!--底部内容 结束-->
+
+
+
+	
+
+	
+	
+<!--页面容器 结束-->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
